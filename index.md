@@ -10,7 +10,7 @@ From
 books, to
 [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons),
 to video games like
-[80 Days](https://en.wikipedia.org/wiki/80_Days_(2014_video_game), artists and
+[80 Days](https://en.wikipedia.org/wiki/80_Days_(2014_video_game)), artists and
 researches have developed many ways to tell stories that adapt to a player's
 choices. Storytelling algorithms have existed for
 [at least 50 years](https://dl.acm.org/doi/10.5555/1624435.1624452), but because
