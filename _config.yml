@@ -1,0 +1,9 @@
+# Site Settings
+title: "Interactive Narrative Challenge"
+description: "The Interactive Narrative Challenge (INCH) is an international research competition that evaluates storytelling algorithms."
+baseurl: "/inch"
+url: "https://sgware.github.io/inch"
+theme: minima
+
+# Layout Customization
+header_pages: []
