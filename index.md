@@ -3,6 +3,8 @@ title: "Interactive Narrative Challenge (INCH)"
 description: "The Interactive Narrative Challenge (INCH) is an international research competition and showcase that evaluates storytelling algorithms."
 ---
 
+<img style="width:50%" src="inch.png" alt="The INCH Logo"/>
+
 The Interactive Narrative Challenge (INCH for shot) is an international research
 competition and showcase that evaluates storytelling algorithms.
 
