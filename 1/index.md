@@ -3,14 +3,14 @@ title: "The First Interactive Narrative Challenge (INCH 1)"
 description: "The first Interactive Narrative Challenge (INCH) was an international research competition and showcase that evaluated storytelling algorithms in 2027."
 ---
 
-The Interactive Narrative Challenge (INCH) is an international research
-competition and showcase of interactive storytelling algorithms. The first INCH
-was announced at the
-[2026 AAAI AIIDE conference](https://sites.google.com/view/aiide2026/home), and
-the results will be announced at at the 2027 AAAI AIIDE conference.
+<img style="float:right;width:30%;margin-left:3%" src="inch1.png" alt="The INCH 1 Logo"/>
+
+The first Interactive Narrative Challenge (INCH 1) is an international research
+competition and showcase of interactive storytelling algorithms.
 
 # Dates
 
+- INCH 1 Announced: 13 November 2026
 - [Intent to Participate](https://forms.gle/NhgM6j6QjwB7BPuP7) Deadline: 30 July
   2027
 - Submission Deadline: 8 October 2027
@@ -94,10 +94,10 @@ and to accept only agents with unique and clearly defined strategies.
 | Random Baseline | n/a         | Makes random choices. |
 | LLM Baseline    | n/a         | Describes the history, current state, and available choices to a Large Language Model which chooses the next action. |
 
-# WINCH Workshop
+# First WINCH Workshop
 
 The first Workshop for the Interactive Narrative Challenge (WINCH) will be held
-at the 2027 AAAI AIIDE workshop in 2027.
+at the 2027 AAAI AIIDE conference.
 
 # Results
 
@@ -106,3 +106,9 @@ Many awards for many kinds of success will be given.
 
 The records of each story session used to calculate metrics and judged by human
 judges will be provided for anyone wanting to do their own analysis.
+
+# Organizers
+
+INCH 1 was organized by [Stephen G. Ware](https://sgware.com), Associate
+Professor of Computer Science at the [University of Kentucky](https://uky.edu),
+and by the [Narrative Intelligence Lab](https://cs.uky.edu/~sgware).
