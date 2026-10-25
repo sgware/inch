@@ -3,15 +3,10 @@ title: "Interactive Narrative Challenge (INCH)"
 description: "The Interactive Narrative Challenge (INCH) is an international research competition and showcase that evaluates storytelling algorithms."
 ---
 
-<img style="width:50%" src="inch.png" alt="The INCH Logo"/>
+<img style="float:right;width:30%;margin-left:3%" src="inch.png" alt="The INCH Logo"/>
 
 The Interactive Narrative Challenge (INCH for shot) is an international research
 competition and showcase that evaluates storytelling algorithms.
-
-_Intent to Participate Deadline_: 30 July 2027
-_Submission Deadline_: 8 October 2027
-_WINCH Workshop_: November 2027
-_Results Announced_: November 2027
 
 From
 [Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)
