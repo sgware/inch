@@ -243,10 +243,11 @@ We will give awards for top performances in both categories.
 We will use automated player agents to sample the kinds of stories your game
 master is able to tell. We will give awards for top performances on all of the
 following automated metrics:
-- *Action Varitey*: The total number of unique actions that appear in all of the
-  stories sampled from your agent.
 - *State Variety*: The total number of unique world states that occur in all of
-  the stories sampled from your agent.
+  the stories sampled from your agent and how different they are from the
+	states produced by other agents.
+- *Story Variety*: The average edit distance between all the stories sampled
+  from your system and from the storied proeudced by other agents.
 - *Causal Necessity*: We say an action is causally necessary if, when it is
   removed, at least one later action would not have been possible. This metric
 	measures what percentage of actions in the stories sampled from your agent
