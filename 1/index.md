@@ -66,13 +66,15 @@ competition and showcase of interactive storytelling algorithms.
   [PDDL 2.1](resources/the-crown-pddl-2-1.zip).
 - [TandemTalesEnv](https://github.com/Mira2778/tandemtales_gym) lets you model
   *The Crown* as a [Gymnasium](https://gymnasium.farama.org/) environment.
-- This [story graph for *The Crown*](resources/crown7.zip) includes all states
-  which can be reached via 7 or fewer actions from the initial state and from
-  which it is possible to reach an ending (or terminal state). The format of the
-  story graph is [documented here](https://github.com/sgware/story-graph).
+- This
+  [story graph for *The Crown*](https://cs.uky.edu/~sgware/events/inch/1/crown7.zip)
+  includes all states which can be reached via 7 or fewer actions from the
+  initial state and from which it is possible to reach an ending (i.e. a
+  terminal state). The format of the story graph is
+  [documented here](https://github.com/sgware/story-graph).
 - [100 example games of *The Crown*](resources/the-crown-training.zip) played by
   human players and human game masters are provided as examples and training
-  data.
+  data. *This resource is not yet available but is coming soon.*
 - Example Tandem Tales agents that make random choices are provided in
   [C++](https://github.com/gsbirch/tt-random-agent-cpp),
   [Java](https://github.com/sgware/tt-random-agent-java), and
