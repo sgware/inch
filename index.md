@@ -5,7 +5,7 @@ description: "The Interactive Narrative Challenge (INCH) is an international res
 
 <img style="float:right;width:30%;margin-left:3%" src="inch.png" alt="The INCH Logo"/>
 
-The Interactive Narrative Challenge (INCH for shot) is an international research
+The Interactive Narrative Challenge (INCH for short) is an international research
 competition and showcase that evaluates storytelling algorithms.
 
 From
@@ -14,7 +14,7 @@ books, to
 [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons),
 to video games like
 [80 Days](https://en.wikipedia.org/wiki/80_Days_(2014_video_game)), artists and
-researches have developed many ways to tell stories that adapt to a player's
+researchers have developed many ways to tell stories that adapt to a player's
 choices.
 [Storytelling algorithms](https://cs.uky.edu/~sgware/reading/papers/kybartas2016survey.pdf)
 have been the subject of 50 years of research, but each system tends to be
@@ -24,29 +24,29 @@ storytelling techniques in the same story world with the same interface.
 
 ## How to Participate
 
-INCH will use [Tandem Tales](http://tandemtales.net/), a platform for playing
+INCH uses [Tandem Tales](http://tandemtales.net/), a platform for playing
 short text-based interactive stories. Every story has two participants: a player
 who controls one character and a game master who controls the other characters
 and the world. Either participant can be a human (playing via a web browser) or
 an automated agent. Tandem Tales makes it easy to match a person with a person,
 a person with an agent, or even an agent with an agent.
 
-To participate in INCH:
+To participate in [the first INCH](1):
 - Fill out the [Intent to Participate Form](https://forms.gle/NhgM6j6QjwB7BPuP7)
   by 30 July 2027.
-- Develop a Tandem Tales game master agent for
-  [The Crown](#about-the-crown-story-world) story world.
+- Develop a Tandem Tales game master agent for [The Crown](1/#resources) story
+  world.
 - Agents should be submitted as [Docker](https://www.docker.com/) containers,
   which allows you to use almost any technology stack to build your agent.
-	Be sure to read [all the requirements](1).
+  Be sure to read [all the requirements](1/#requirements).
 - Submit the Docker container and public repository for your agent by 8 October
   2027.
 - The results will be announced in November 2027 at the
   [23rd AIIDE conference](http://aiide.org/).
 
-The [Resource](#resources) section has links to example agents in multiple
-programming languages, details on *The Crown* story world, training data, and
-other things you may find useful.
+The [Resource](1/#resources) section has links to example agents in multiple
+programming languages, details on *The Crown* story world, a pre-expanded story
+graph, training data, and details on how to use the Large Language Model API.
 
 ## Why Participate?
 
@@ -69,204 +69,11 @@ great strengths. We want a way to compare one agent to another, but we
 *do not want* to over-focus our research community on specific metrics or one
 particular definition of a "good story."
 
-INCH is designed as as a showcase rather than a competition. We will evaluate
-many different metrics and give many awards. There is *intentionally* no Best
-in Show award. Our goal is to celebrate many kinds of success, not to name one
-overall winner.
+INCH is designed as a showcase rather than a competition. We will evaluate many
+different metrics and give many awards. There is *intentionally* no Best in Show
+award. Our goal is to celebrate many kinds of success, not to name one overall
+winner.
 
-## Agent Restrictions
+## INCH History
 
-Agents submitted for the competition will run on our server during evaluation.
-- The server uses a 64 bit Intel Xeon Silver 4110 CPU that runs at 2.10 GHz.
-- Each agent will have at least one dedicated CPU core while it runs.
-- The server uses DDR4 RAM that runs at 2400 MT/s.
-
-Agents must be submitted as [Docker](https://www.docker.com/) containers, both
-to simplify delivery and for security.
-- The agent's container file cannot be larger than 10 GB in size.
-- When running, the agent's container will be limited to 16 GB of RAM.
-- The container will be firewalled to prevent it from connecting to to the
-  internet or any external APIs (except for the
-  [approved LLM API](#large-language-model-api)).
-
-# Resources
-
-## Example Agents
-
-We have implemented three example [Tandem Tales](https://sgware.github.io/tt/)
-agents that make random choices in
-[C++](https://github.com/gsbirch/tt-random-agent-cpp),
-[Java](https://github.com/sgware/tt-random-agent-java), and
-[Python](https://github.com/sgware/tt-random-agent-python).
-Cloning one of these repositories is a good place to start.
-
-If you want to write your own agent from scratch, we have
-[documented the messages](https://sgware.github.io/tt/protocol.html) exchanged
-between a Tandem Tales client and server.
-
-## About The Crown Story World
-
-For the first INCH, all submissions will play the same story world, *The Crown*.
-Its exact properties are known and clearly defined in advance. Besides the
-player character, it features 4 non-player characters, 4 locations, and a
-handful of items. The kindgom's crown has been stolen, and the story ends when
-any character is crowned the new monarch or when the player dies.
-
-You can learn about about *The Crown* from these resources:
-- [This document](https://sgware.github.io/inch/1/resources/the-crown.pdf)
-  clearly defines every element of *The Crown*'s world, story state, when
-	actions are available and how they chang the story, and the story's end
-	conditions.
-- You can
-  [play *The Crown* in your web browser](http://tandemtales.net/play?world=crown&role=player).
-	This is how the human judges in the Interactive Narrative Challenge will play
-	with your game master agent.
-- The
-  [Tandem Tales story world JSON file](https://github.com/sgware/tt-server/blob/main/worlds/crown.json)
-	is the official definition of *The Crown* used by the
-	[Tandem Tales server](https://github.com/sgware/tt-server).
-- We have defined *The Crown* in both
-  [PDDL 1.2](https://sgware.github.io/inch/1/resources/the-crown-pddl-1-2.zip)
-	and
-	[PDDL 2.1](https://sgware.github.io/inch/1/resources/the-crown-pddl-2-1.zip),
-	which can be read by many planning systems and other deterministic decision
-	process solvers.
-- [TandemTalesEnv](https://github.com/Mira2778/tandemtales_gym) lets you model
-  any Tamdem Tales world, including *The Crown*, as a
-	[Gymnasium](https://gymnasium.farama.org/) environment, a common standard for
-	reinforcement learning problems.
-
-For the first INCH, there is only a single story world that is clearly defined
-in advance. In future years, we may add additional tracks to the competition for
-agents that can play multiple story worlds, unknown story worlds, etc.
-
-## Large Language Model API
-
-Given the recent success of Large Language Models (LLMs) in several domains,
-we will provide API access for one large reasoning model for both text
-completion and embedding via [OpenRouter](https://openrouter.ai/). We will
-provide your agent with an API key at run time during the competition and
-will pay the API fees. Agents will have a maximum number of input and output
-tokens they can use per session.
-
-All agents must use the same model and API. This restriction promotes fairness.
-We are interested in innovation and do not want one agent to win simply by
-using a more expensive LLM or burning more tokens.
-
-The API restrictions for this year's competition are:
-- Model: [Deepseek v4 Flash](https://openrouter.ai/deepseek/deepseek-v4-flash-0731)
-- Input Tokens per Story: 5 million
-- Output Tokens per Story: 2 million
-
-Our [example agents](#example-agents) have built-in functions for calling the
-LLM API, including customizable parameters like *temperature*, *top-k*, etc. and
-methods for counting the number of input and output tokens used.
-
-## Traning Data
-
-For those interested in a data-driven approach, we have provided 100 example
-Tandem Tales sessions of human partners playing
-*The Crown*. Both the players and game masters of these sessions are people, and
-both sides provide occasional ratings of the story's structure and their
-experience of agency as they play.
-
-## Story Graph
-
-We have expanded all possible states of *The Crown* story using complete
-breadth-first search to a depth of 7 and saved them this story graph file. States
-from which a terminal state is not accessible have been removed. In other words,
-this graph contains all states that are possible in a story with 7 or fewer
-actions as long as it is possible for the story to end.
-
-The story graph file has
-[a format that should be easy to read](https://github.com/sgware/story-graph)
-from many applications.
-[Here are several tools](https://github.com/sgware/story-graph-tools), for
-working with story graphs, including the
-[Story Graph Explore Tool](https://github.com/sgware/story-graph-tools/raw/refs/heads/main/build/jar/sg-explore.jar),
-that you can use to explore the graph from a terminal.
-
-# Judging
-
-All submissions will be evaluated in several ways, both with human judges and
-with automated metrics.
-
-## Judges Panel
-
-A jury of human judges will play three games with each agent:
-1. First, they will play in a way that is clearly supported by the game master.
-1. Second, they will attempt to make very different choices than in the first
-  game.
-1. Third, they will intentionally try to resist the game master, testing the
-  boundaries of what the game will allow.
-
-This panel of judges will rank each agent based on these criteria, and we will
-give awards for top performances in each category.
-- *Story Quality*: The story felt well-crafted. All of the actions in the story
-  were important to the plot. The ending made sense based on the earlier events.
-	There were no loose ends of unnecessary tangents.
-- *Meaningful Choice*: I had the opportunity to make important choices, and they
-  significantly changed the story. I saw the results of my earlier choices later
-	in the story. I did not feel like the game master way trying to force one
-	specific story to happen despite my choices.
-- *Character Believability*: The non-player characters in the story reacted
-  realistically to my actions. I could clearly identify what they wanted and
-	why they acted the way they did. NPC actions did not feel random or
-	unpredictable.
-- *Replayability*: The agent can tell a wide varity of stories that all make
-  sense. When I made different choices, the story was significantly different.
-	The game does not feel the same every time I play.
-
-## Crowd-Sourced Judges
-
-A crowd of human players will be recruited from [Prolific](https://prolific.com)
-to play games with each agent. This group of judges will be larger in number but
-less systematic. In other words, there is no guarantee which judges will play
-with which agents.
-
-As they play, judges will occasionally be interrupted to report two metrics on a
-Likert scale (from stronly disagree to strongly agree). They will also give a
-final rating for both of these metrics at the end of the story.
-- *Structure*: Every action in this story is important and well-integrated into
-  the narrative.
-- *Agency*: I feel free to make meaningful choices that will influence this
-  story.
-
-We will give awards for top performances in both categories.
-
-## Automated Metrics
-
-We will use automated player agents to sample the kinds of stories your game
-master is able to tell. We will give awards for top performances on all of the
-following automated metrics:
-- *State Variety*: The total number of unique world states that occur in all of
-  the stories sampled from your agent and how different they are from the
-	states produced by other agents.
-- *Story Variety*: The average edit distance between all the stories sampled
-  from your system and from the storied proeudced by other agents.
-- *Causal Necessity*: We say an action is causally necessary if, when it is
-  removed, at least one later action would not have been possible. This metric
-	measures what percentage of actions in the stories sampled from your agent
-	were causally necessary.
-- *Accommodation*: When a player tries to take an action and the game master
-  allows it, we call it accommodation. When the game master disallows an action,
-	we call it intervention. This metric measures how often your game master
-	accomodates actions rather that intervening.
-
-## Additional Evaluations
-
-Do you have a suggestion for something to measure in this showcase? Do you
-object to how a question is worded? The organizers are open to discussion!
-
-# Organizers
-
-The first Interactive Narrative Challenge is being organized by
-[The Narrative Intelligence Lab](http://cs.uky.edu/~sgware/) at
-[The University of Kentucky](http://uky.edu).
-
-For questions, please contact:
-
-Stephen G. Ware, PhD.
-Associate Professor
-Department of Computer Science
-sgware@cs.uky.edu
+- The [first INCH](1) will be held in 2027.
