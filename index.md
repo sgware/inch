@@ -38,11 +38,7 @@ To participate in INCH:
   [The Crown](#about-the-crown-story-world) story world.
 - Agents should be submitted as [Docker](https://www.docker.com/) containers,
   which allows you to use almost any technology stack to build your agent.
-	Please read the [Agent Restrictions](#agent-restrictions).
-- In the interest of reproducability, you must make your agent publically
-  available for others to run. You are only required to make your executable
-	available, but we strongly encourage all teams to make their source code
-	available so others can learn from and possibly improve your agent.
+	Be sure to read [all the requirements](1).
 - Submit the Docker container and public repository for your agent by 8 October
   2027.
 - The results will be announced in November 2027 at the
